@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Selecione seu artista preferido</p>
+    <select id="artistas" onchange="selecionarArtistas()">
+        <option value="McKevin">McKevin</option>
+        <option value="Hariel">Hariel</option>
+        <option value="Kayblack">Kayblack</option>
+    </select>
+    <p id="resultado"></p>
+    <script>
+        function selecionarArtistas(){
+            let artista = document.getElementById("artistas").value
+            document.getElementById("resultado").innerHTML = "Esse é bom: " + artista
+        }
+    </script>
+</body>
+</html>
